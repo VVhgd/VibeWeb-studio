@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VibeWeb Studio - Студія веб-розробки. Створюємо сучасні та стильні веб-сайти">
+    <title>VibeWeb Studio — Студія Розробки Вебсайтів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <svg class="preloader-logo" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10L40 70L70 10" stroke="url(#gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                    <linearGradient id="gradient" x1="10" y1="10" x2="70" y2="70">
+                        <stop offset="0%" stop-color="#00D4FF"/>
+                        <stop offset="100%" stop-color="#7B2FF7"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="preloader-text">VibeWeb Studio</div>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 5L20 35L35 5" stroke="url(#logo-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="5" y1="5" x2="35" y2="35">
+                            <stop offset="0%" stop-color="#00D4FF"/>
+                            <stop offset="100%" stop-color="#7B2FF7"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">VibeWeb <span class="logo-studio">Studio</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#projects" class="nav-link">Проекти</a></li>
+                <li><a href="#services" class="nav-link">Послуги</a></li>
+                <li><a href="#advantages" class="nav-link">Переваги</a></li>
+                <li><a href="#about" class="nav-link">Про нас</a></li>
+                <li><a href="#contact" class="nav-link">Контакти</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Змінити тему">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14.1 5.9M5.9 14.1L4.5 15.5M15.5 15.5L14.1 14.1M5.9 5.9L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C6 2.5 5 4.5 5 7C5 11 8 14 12 14C13.5 14 15 13.5 16 12.5C16.5 11.5 17 11 17 10.5Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <a href="tel:+380968324080" class="btn-phone">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>+380 96 832 40 80</span>
+                </a>
+                <a href="https://t.me/Nexussiko" target="_blank" class="btn-nav">Обговорити проєкт</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="canvas3d"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-labels">
+                    <span class="hero-label">creative</span>
+                    <span class="hero-label">modern</span>
+                    <span class="hero-label">effective</span>
+                </div>
+                <h1 class="hero-title">СТВОРЮЄМО<br><span class="gradient-text">DIGITAL МАЙБУТНЄ</span></h1>
+                <p class="hero-subtitle">Ваш бізнес заслуговує на найкраще</p>
+                <div class="hero-slogan">Від ідеї до реалізації — з нами це просто</div>
+                <a href="#projects" class="scroll-indicator">
+                    <span>scroll</span>
+                    <svg width="20" height="40" viewBox="0 0 20 40" fill="none">
+                        <path d="M10 5V35M10 35L5 30M10 35L15 30" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-label">cases</div>
+            <h2 class="section-title">ПРОЕКТИ</h2>
+            
+            <div class="projects-grid">
+                <article class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">lavanda-spa.com</div>
+                            </div>
+                            <div class="mockup-content mockup-spa"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Бізнес-сайт</span>
+                        <h3 class="project-name">Lavanda SPA — Сайт для спа-салону у Вінниці</h3>
+                        <p class="project-desc">Елегантний багатосторінковий сайт з онлайн-записом, галереєю послуг та інтеграцією соцмереж</p>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-tilt>
+                    <div class="project-image project-image-2">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">pizzavnn.com</div>
+                            </div>
+                            <div class="mockup-content mockup-pizza"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Меню по QR-коду</span>
+                        <h3 class="project-name">Pizza House — Цифрове меню для піцерії</h3>
+                        <p class="project-desc">Інтерактивне QR-меню з фотографіями страв, цінами та можливістю онлайн-замовлення</p>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-tilt>
+                    <div class="project-image project-image-3">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">techsolutions.ua</div>
+                            </div>
+                            <div class="mockup-content mockup-tech"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Landing Page</span>
+                        <h3 class="project-name">TechSolutions — Лендінг для IT-послуг</h3>
+                        <p class="project-desc">Конверсійний одностор з анімаціями, формою заявки та інтеграцією CRM-системи</p>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-tilt>
+                    <div class="project-image project-image-4">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">fashionstore.ua</div>
+                            </div>
+                            <div class="mockup-content mockup-fashion"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Інтернет-магазин</span>
+                        <h3 class="project-name">Fashion Store — Магазин одягу</h3>
+                        <p class="project-desc">Повнофункціональний інтернет-магазин з каталогом, кошиком, оплатою та системою знижок</p>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-tilt>
+                    <div class="project-image project-image-5">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">fitnessgym.com</div>
+                            </div>
+                            <div class="mockup-content mockup-fitness"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Бізнес-сайт</span>
+                        <h3 class="project-name">FitnessGym — Сайт для фітнес-клубу</h3>
+                        <p class="project-desc">Сайт з розкладом занять, купівлею абонементів та особистим кабінетом клієнта</p>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-tilt>
+                    <div class="project-image project-image-6">
+                        <div class="project-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">architectstudio.com</div>
+                            </div>
+                            <div class="mockup-content mockup-architect"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Портфоліо</span>
+                        <h3 class="project-name">Architect Studio — Портфоліо архітектора</h3>
+                        <p class="project-desc">Візуально-насичений сайт-портфоліо з галереєю проєктів та 3D-презентаціями</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-label">services</div>
+            <h2 class="section-title">ПОСЛУГИ</h2>
+            
+            <div class="services-grid">
+
+                <!-- QR Menu -->
+                <div class="service-card" data-service="qr-menu">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <rect x="15" y="15" width="30" height="30" rx="4" stroke="url(#sg1)" stroke-width="2"/>
+                                <path d="M25 25H35M25 30H32" stroke="url(#sg1)" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="27" cy="37" r="2" fill="url(#sg1)"/>
+                                <defs><linearGradient id="sg1" x1="15" y1="15" x2="45" y2="45"><stop offset="0%" stop-color="#00D4FF"/><stop offset="100%" stop-color="#7B2FF7"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Меню по QR-коду</h3>
+                        <p class="service-description">Цифрове меню для ресторанів та кафе з можливістю швидкого оновлення</p>
+                        <div class="service-price">Від 2 000 грн</div>
+                    </div>
+                    <div class="service-card-back">
+                        <div class="service-back-header">
+                            <span class="service-back-title">Меню по QR-коду</span>
+                            <span class="service-back-price">Від 2 000 грн</span>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">🎯 Чим допоможе</div>
+                            <ul class="service-back-list">
+                                <li>Економія на друку меню — назавжди</li>
+                                <li>Миттєве оновлення цін без витрат</li>
+                                <li>Збільшення середнього чека +30%</li>
+                                <li>Збір відгуків прямо через меню</li>
+                                <li>Аналітика популярних страв</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">📦 Що входить</div>
+                            <ul class="service-back-list">
+                                <li>Дизайн + верстка меню</li>
+                                <li>QR-коди для столиків</li>
+                                <li>Адмін-панель для редагування</li>
+                                <li>Хостинг & SSL на 1 рік</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-cta">
+                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
+                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                        </div>
+                    </div>
+                    <button class="service-details-btn">Детальніше</button>
+                </div>
+
+                <!-- Landing Page -->
+                <div class="service-card" data-service="landing">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <rect x="10" y="10" width="40" height="40" rx="4" stroke="url(#sg2)" stroke-width="2"/>
+                                <path d="M20 25H40M20 30H35M20 35H30" stroke="url(#sg2)" stroke-width="2" stroke-linecap="round"/>
+                                <defs><linearGradient id="sg2" x1="10" y1="10" x2="50" y2="50"><stop offset="0%" stop-color="#7B2FF7"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Landing Page</h3>
+                        <p class="service-description">Конверсійний лендінг для продажу вашого продукту або послуги 24/7</p>
+                        <div class="service-price">Від 4 990 грн</div>
+                    </div>
+                    <div class="service-card-back">
+                        <div class="service-back-header">
+                            <span class="service-back-title">Landing Page</span>
+                            <span class="service-back-price">Від 4 990 грн</span>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">🎯 Чим допоможе</div>
+                            <ul class="service-back-list">
+                                <li>Конверсія заявок до +40%</li>
+                                <li>Продажі та заявки 24/7 без менеджерів</li>
+                                <li>Швидкий запуск реклами в Google/Meta</li>
+                                <li>SEO — клієнти самі вас знаходять</li>
+                                <li>Аналітика кожного відвідувача</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">📦 Що входить</div>
+                            <ul class="service-back-list">
+                                <li>Унікальний дизайн у Figma</li>
+                                <li>Адаптив Mobile/Tablet/Desktop</li>
+                                <li>Анімації та WOW-ефекти</li>
+                                <li>Google Analytics + Facebook Pixel</li>
+                                <li>SSL + хостинг 1 рік</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-cta">
+                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
+                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                        </div>
+                    </div>
+                    <button class="service-details-btn">Детальніше</button>
+                </div>
+
+                <!-- Бізнес-сайт -->
+                <div class="service-card" data-service="business">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <rect x="15" y="15" width="30" height="30" rx="3" stroke="url(#sg3)" stroke-width="2"/>
+                                <path d="M23 23H37M23 28H37M23 33H33" stroke="url(#sg3)" stroke-width="2" stroke-linecap="round"/>
+                                <defs><linearGradient id="sg3" x1="15" y1="15" x2="45" y2="45"><stop offset="0%" stop-color="#FF6B9D"/><stop offset="100%" stop-color="#00D4FF"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Бізнес-сайт</h3>
+                        <p class="service-description">Повноцінний корпоративний сайт для серйозного бізнесу з максимою функціоналом</p>
+                        <div class="service-price">Від 9 990 грн</div>
+                    </div>
+                    <div class="service-card-back">
+                        <div class="service-back-header">
+                            <span class="service-back-title">Бізнес-сайт</span>
+                            <span class="service-back-price">Від 9 990 грн</span>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">🎯 Чим допоможе</div>
+                            <ul class="service-back-list">
+                                <li>Репутація та довіра клієнтів</li>
+                                <li>Залучення з Google — безкоштовний трафік</li>
+                                <li>Захист від хакерів (SSL + DDoS)</li>
+                                <li>Швидкість сайту до 100/100 в Google</li>
+                                <li>Зростання продажів на 150%+</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">📦 Що входить</div>
+                            <ul class="service-back-list">
+                                <li>До 10 сторінок унікального дизайну</li>
+                                <li>Блог, портфоліо, галерея</li>
+                                <li>Адмін-панель, CMS</li>
+                                <li>SEO усіх сторінок + Google Maps</li>
+                                <li>SSL + DDoS захист</li>
+                                <li>Підтримка 3 місяці</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-cta">
+                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
+                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                        </div>
+                    </div>
+                    <button class="service-details-btn">Детальніше</button>
+                </div>
+
+                <!-- Інтернет-магазин -->
+                <div class="service-card" data-service="ecommerce">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <path d="M20 35L30 25L40 35M30 40V25" stroke="url(#sg4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="12" y="12" width="36" height="36" rx="4" stroke="url(#sg4)" stroke-width="2"/>
+                                <defs><linearGradient id="sg4" x1="12" y1="12" x2="48" y2="48"><stop offset="0%" stop-color="#00D4FF"/><stop offset="100%" stop-color="#7B2FF7"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Інтернет-магазин</h3>
+                        <p class="service-description">Повнофункціональний магазин з оплатою та автоматичними замовленнями</p>
+                        <div class="service-price">Від 15 999 грн</div>
+                    </div>
+                    <div class="service-card-back">
+                        <div class="service-back-header">
+                            <span class="service-back-title">Інтернет-магазин</span>
+                            <span class="service-back-price">Від 15 999 грн</span>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">🎯 Чим допоможе</div>
+                            <ul class="service-back-list">
+                                <li>Продажі автоматично 24/7</li>
+                                <li>Збільшення обороту до 200%</li>
+                                <li>Клієнти по всій Україні і не тільки</li>
+                                <li>Аналітика продажів у реальному часі</li>
+                                <li>Програми лояльності — повторні покупки</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">📦 Що входить</div>
+                            <ul class="service-back-list">
+                                <li>Каталог + кошик + оплата</li>
+                                <li>LiqPay / WayForPay / Portmone</li>
+                                <li>Нова Пошта + доставка</li>
+                                <li>Відгуки, фільтри, пошук</li>
+                                <li>Адмін-панель + імпорт Excel</li>
+                                <li>Підтримка 6 місяців</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-cta">
+                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
+                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                        </div>
+                    </div>
+                    <button class="service-details-btn">Детальніше</button>
+                </div>
+
+                <!-- NFC -->
+                <div class="service-card" data-service="nfc">
+                    <div class="service-card-front">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <rect x="18" y="10" width="24" height="40" rx="3" stroke="url(#sg5)" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="8" stroke="url(#sg5)" stroke-width="2"/>
+                                <path d="M30 26V30L32 32" stroke="url(#sg5)" stroke-width="2" stroke-linecap="round"/>
+                                <defs><linearGradient id="sg5" x1="18" y1="10" x2="42" y2="50"><stop offset="0%" stop-color="#FF6B9D"/><stop offset="100%" stop-color="#7B2FF7"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">NFC картки</h3>
+                        <p class="service-description">Смарт-візитка з NFC для збору відгуків одним дотиком — WOW-ефект гарантовано</p>
+                        <div class="service-price">Від 450 грн</div>
+                    </div>
+                    <div class="service-card-back">
+                        <div class="service-back-header">
+                            <span class="service-back-title">NFC картки</span>
+                            <span class="service-back-price">Від 450 грн</span>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">🎯 Чим допоможе</div>
+                            <ul class="service-back-list">
+                                <li>WOW-ефект при знайомстві — запам'ятають</li>
+                                <li>Збір відгуків Google одним дотиком</li>
+                                <li>Рейтинг компанії росте автоматично</li>
+                                <li>Ніколи не гублять як паперові візитки</li>
+                                <li>Статистика переглядів і переходів</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-section">
+                            <div class="service-back-section-title">📦 Що входить</div>
+                            <ul class="service-back-list">
+                                <li>NFC-картка преміум-якості</li>
+                                <li>Дизайн (2 варіанти на вибір)</li>
+                                <li>Особиста сторінка-профіль</li>
+                                <li>QR-код + посилання на відгуки</li>
+                                <li>Можливість редагувати дані</li>
+                            </ul>
+                        </div>
+                        <div class="service-back-cta">
+                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
+                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                        </div>
+                    </div>
+                    <button class="service-details-btn">Детальніше</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <div class="modal" id="modal-qr-menu">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Меню по QR-коду</h2>
+            <div class="modal-price">Від 2 000 грн</div>
+            
+            <div class="modal-section">
+                <h3>🎯 Чим це допоможе вашому бізнесу:</h3>
+                <ul class="modal-list">
+                    <li>✅ Економія на друку паперових меню</li>
+                    <li>✅ Миттєве оновлення цін та позицій без витрат</li>
+                    <li>✅ Збільшення середнього чека через візуальну подачу</li>
+                    <li>✅ Зручність для гостей - меню завжди під рукою</li>
+                    <li>✅ Збір відгуків прямо з меню</li>
+                    <li>✅ Аналітика популярних страв</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📦 Що входить у вартість:</h3>
+                <ul class="modal-list">
+                    <li>✓ Дизайн цифрового меню</li>
+                    <li>✓ Адаптивна верстка під всі пристрої</li>
+                    <li>✓ Генерація QR-кодів</li>
+                    <li>✓ Можливість редагувати меню самостійно</li>
+                    <li>✓ Інтеграція фото страв</li>
+                    <li>✓ Категорії та фільтри</li>
+                    <li>✓ Хостинг на 1 рік</li>
+                    <li>✓ Технічна підтримка 1 місяць</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>⏱️ Терміни:</h3>
+                <p>Розробка - 3-5 робочих днів</p>
+            </div>
+            
+            <a href="https://t.me/Nexussiko" target="_blank" class="modal-btn">Замовити зараз</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-landing">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Landing Page</h2>
+            <div class="modal-price">Від 4 990 грн</div>
+            
+            <div class="modal-section">
+                <h3>🎯 Чим це допоможе вашому бізнесу:</h3>
+                <ul class="modal-list">
+                    <li>✅ Збільшення конверсії до 40%</li>
+                    <li>✅ Швидкий запуск рекламних кампаній</li>
+                    <li>✅ Збір контактів потенційних клієнтів</li>
+                    <li>✅ Продажі 24/7 без менеджерів</li>
+                    <li>✅ A/B тестування для оптимізації</li>
+                    <li>✅ Інтеграція з Google Analytics</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📦 Що входить у вартість:</h3>
+                <ul class="modal-list">
+                    <li>✓ Унікальний дизайн у Figma</li>
+                    <li>✓ Адаптивна верстка (mobile, tablet, desktop)</li>
+                    <li>✓ Анімації та мікроінтеракції</li>
+                    <li>✓ Форма зворотного зв'язку</li>
+                    <li>✓ Інтеграція з CRM</li>
+                    <li>✓ SEO оптимізація</li>
+                    <li>✓ Google Analytics та Pixel Facebook</li>
+                    <li>✓ Хостинг та домен на 1 рік</li>
+                    <li>✓ SSL сертифікат (HTTPS)</li>
+                    <li>✓ Технічна підтримка 2 місяці</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>⏱️ Терміни:</h3>
+                <p>Розробка - 7-10 робочих днів</p>
+            </div>
+            
+            <a href="https://t.me/Nexussiko" target="_blank" class="modal-btn">Замовити зараз</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-business">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Бізнес-сайт</h2>
+            <div class="modal-price">Від 9 990 грн</div>
+            
+            <div class="modal-section">
+                <h3>🎯 Чим це допоможе вашому бізнесу:</h3>
+                <ul class="modal-list">
+                    <li>✅ Професійний імідж компанії</li>
+                    <li>✅ Довіра клієнтів та партнерів</li>
+                    <li>✅ Залучення нових клієнтів через Google</li>
+                    <li>✅ Повна презентація послуг та товарів</li>
+                    <li>✅ Захист від хакерів (SSL + DDoS)</li>
+                    <li>✅ Швидкість завантаження до 1 секунди</li>
+                    <li>✅ Зростання в пошуковій видачі</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📦 Що входить у вартість:</h3>
+                <ul class="modal-list">
+                    <li>✓ Унікальний дизайн до 10 сторінок</li>
+                    <li>✓ Адаптивна верстка</li>
+                    <li>✓ Адмін-панель для керування контентом</li>
+                    <li>✓ Форми зворотного зв'язку</li>
+                    <li>✓ Портфоліо/Галерея робіт</li>
+                    <li>✓ Блог або новини</li>
+                    <li>✓ Інтеграція з соцмережами</li>
+                    <li>✓ Google Maps</li>
+                    <li>✓ SEO оптимізація всіх сторінок</li>
+                    <li>✓ SSL сертифікат + DDoS захист</li>
+                    <li>✓ Google Analytics</li>
+                    <li>✓ Хостинг та домен на 1 рік</li>
+                    <li>✓ Технічна підтримка 3 місяці</li>
+                    <li>✓ Навчання роботі з сайтом</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>⏱️ Терміни:</h3>
+                <p>Розробка - 14-21 робочий день</p>
+            </div>
+            
+            <a href="https://t.me/Nexussiko" target="_blank" class="modal-btn">Замовити зараз</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-ecommerce">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Інтернет-магазин</h2>
+            <div class="modal-price">Від 15 999 грн</div>
+            
+            <div class="modal-section">
+                <h3>🎯 Чим це допоможе вашому бізнесу:</h3>
+                <ul class="modal-list">
+                    <li>✅ Продажі 24/7 без вихідних</li>
+                    <li>✅ Автоматизація приймання замовлень</li>
+                    <li>✅ Збільшення продажів до 200%</li>
+                    <li>✅ Розширення географії клієнтів</li>
+                    <li>✅ Зменшення витрат на персонал</li>
+                    <li>✅ Аналітика продажів в реальному часі</li>
+                    <li>✅ Програми лояльності та знижки</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📦 Що входить у вартість:</h3>
+                <ul class="modal-list">
+                    <li>✓ Унікальний дизайн магазину</li>
+                    <li>✓ Адаптивна верстка</li>
+                    <li>✓ Каталог товарів з категоріями</li>
+                    <li>✓ Кошик та оформлення замовлення</li>
+                    <li>✓ Особистий кабінет користувача</li>
+                    <li>✓ Онлайн-оплата (LiqPay, Portmone, WayForPay)</li>
+                    <li>✓ Інтеграція з Новою Поштою</li>
+                    <li>✓ Система знижок та промокодів</li>
+                    <li>✓ Пошук та фільтри товарів</li>
+                    <li>✓ Відгуки та рейтинг товарів</li>
+                    <li>✓ Адмін-панель для управління</li>
+                    <li>✓ Імпорт товарів з Excel</li>
+                    <li>✓ SEO оптимізація</li>
+                    <li>✓ SSL + DDoS захист</li>
+                    <li>✓ Google Analytics + E-commerce</li>
+                    <li>✓ Хостинг та домен на 1 рік</li>
+                    <li>✓ Технічна підтримка 6 місяців</li>
+                    <li>✓ Повне навчання роботі</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>⏱️ Терміни:</h3>
+                <p>Розробка - 21-30 робочих днів</p>
+            </div>
+            
+            <a href="https://t.me/Nexussiko" target="_blank" class="modal-btn">Замовити зараз</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-nfc">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">NFC картки</h2>
+            <div class="modal-price">Від 450 грн</div>
+            
+            <div class="modal-section">
+                <h3>🎯 Чим це допоможе вашому бізнесу:</h3>
+                <ul class="modal-list">
+                    <li>✅ WOW-ефект при знайомстві з клієнтами</li>
+                    <li>✅ Збір відгуків на Google та соцмережах</li>
+                    <li>✅ Миттєвий обмін контактами</li>
+                    <li>✅ Не губляться як паперові візитки</li>
+                    <li>✅ Підвищення рейтингу компанії</li>
+                    <li>✅ Екологічно - економія паперу</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📦 Що входить у вартість:</h3>
+                <ul class="modal-list">
+                    <li>✓ NFC картка преміум-якості</li>
+                    <li>✓ Дизайн картки (2 варіанти)</li>
+                    <li>✓ Особиста сторінка-профіль</li>
+                    <li>✓ Прямі посилання на відгуки</li>
+                    <li>✓ Соцмережі та контакти</li>
+                    <li>✓ QR-код резервний</li>
+                    <li>✓ Програмування NFC-чіпа</li>
+                    <li>✓ Інструкція по використанню</li>
+                    <li>✓ Можливість редагувати дані</li>
+                    <li>✓ Статистика переглядів</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>💡 Як працює:</h3>
+                <p>Просто приклади картку до телефону клієнта - відкриється ваш профіль з посиланнями на відгуки, соцмережі, контакти. Клієнт одним кліком може залишити відгук!</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>⏱️ Терміни:</h3>
+                <p>Виготовлення - 3-5 робочих днів</p>
+            </div>
+            
+            <a href="https://t.me/Nexussiko" target="_blank" class="modal-btn">Замовити зараз</a>
+        </div>
+    </div>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages">
+        <div class="parallax-cubes">
+            <div class="cube cube-1"></div>
+            <div class="cube cube-2"></div>
+            <div class="cube cube-3"></div>
+            <div class="cube cube-4"></div>
+        </div>
+        <div class="container">
+            <div class="section-label">why us</div>
+            <h2 class="section-title">НАШІ ПЕРЕВАГИ</h2>
+            <p class="section-subtitle">Чому обирають саме нас? Бо ми не просто робимо сайти — ми створюємо цифрові шедеври!</p>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card" data-aos="fade-up">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 5L30 20L45 25L30 30L25 45L20 30L5 25L20 20L25 5Z" stroke="url(#adv-gradient-1)" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-1" x1="5" y1="5" x2="45" y2="45">
+                                    <stop offset="0%" stop-color="#00D4FF"/>
+                                    <stop offset="100%" stop-color="#7B2FF7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Швидкість як у Flash</h3>
+                    <p class="advantage-text">Ваш сайт буде летіти швидше за суперкара! Оптимізація на максі — клієнти не встигнуть закрити очі, як сайт вже загрузився.</p>
+                </div>
+                
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <rect x="10" y="15" width="30" height="20" rx="2" stroke="url(#adv-gradient-2)" stroke-width="2"/>
+                            <path d="M15 35L25 25L35 35" stroke="url(#adv-gradient-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-2" x1="10" y1="15" x2="40" y2="35">
+                                    <stop offset="0%" stop-color="#7B2FF7"/>
+                                    <stop offset="100%" stop-color="#FF6B9D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Дизайн, що палить</h3>
+                    <p class="advantage-text">Забудьте про нудні шаблони! Кожен наш проєкт — це унікальний арт, який запам'ятовується з першого погляду. Ваші конкуренти будуть плакати від заздрості.</p>
+                </div>
+                
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="15" stroke="url(#adv-gradient-3)" stroke-width="2"/>
+                            <path d="M25 15V25L32 32" stroke="url(#adv-gradient-3)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-3" x1="10" y1="10" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#FF6B9D"/>
+                                    <stop offset="100%" stop-color="#00D4FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Дедлайни? Легко!</h3>
+                    <p class="advantage-text">Ми не знаємо, що таке запізнення. Обіцяємо термін — виконуємо! Ваш проєкт буде готовий чітко в строк, а то й раніше.</p>
+                </div>
+                
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M15 25L22 32L35 18" stroke="url(#adv-gradient-4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="25" cy="25" r="18" stroke="url(#adv-gradient-4)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-4" x1="7" y1="7" x2="43" y2="43">
+                                    <stop offset="0%" stop-color="#00D4FF"/>
+                                    <stop offset="100%" stop-color="#7B2FF7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">100% Адаптив</h3>
+                    <p class="advantage-text">Ваш сайт буде ідеально виглядати на всіх пристроях — від телефона до 4K монітора. Pixel perfect — це про нас!</p>
+                </div>
+                
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 10L28 22L40 25L28 28L25 40L22 28L10 25L22 22L25 10Z" stroke="url(#adv-gradient-5)" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="3" fill="url(#adv-gradient-5)"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-5" x1="10" y1="10" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#7B2FF7"/>
+                                    <stop offset="100%" stop-color="#FF6B9D"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">SEO на рівні богів</h3>
+                    <p class="advantage-text">Ваш сайт буде в топі Google швидше, ніж ви встигнете сказати "оптимізація". Трафік полетить рікою!</p>
+                </div>
+                
+                <div class="advantage-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="advantage-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 8L30 18L42 20L33 28L36 42L25 36L14 42L17 28L8 20L20 18L25 8Z" stroke="url(#adv-gradient-6)" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="adv-gradient-6" x1="8" y1="8" x2="42" y2="42">
+                                    <stop offset="0%" stop-color="#FF6B9D"/>
+                                    <stop offset="100%" stop-color="#00D4FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Підтримка 24/7</h3>
+                    <p class="advantage-text">Щось пішло не так? Ми завжди на зв'язку! Вночі чи вдень — допоможемо вирішити будь-яку проблему миттєво.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-label">about</div>
+            <div class="about-content">
+                <h2 class="about-title">Ми — VibeWeb Studio, студія дизайну та розробки вебсайтів.</h2>
+                <p class="about-text">Наша мета — створювати унікальні якісні веб-рішення, що дозволять Вашому бізнесу розвиватися та залучати більше клієнтів.</p>
+            </div>
+            
+            <div class="tech-stack">
+                <h3 class="tech-title">З якими технологіями ми працюємо?</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" stroke="#00D4FF" stroke-width="2"/>
+                                <path d="M20 10V30M15 15L20 10L25 15" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h4>React / Vue.js</h4>
+                        <p>Сучасні фреймворки для створення інтерактивних інтерфейсів</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="10" y="10" width="20" height="20" rx="2" stroke="#7B2FF7" stroke-width="2"/>
+                                <path d="M15 20H25M20 15V25" stroke="#7B2FF7" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h4>WordPress</h4>
+                        <p>Гнучка CMS з можливістю легкого керування контентом</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M12 20L18 26L28 14" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="20" cy="20" r="12" stroke="#FF6B9D" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4>GSAP Анімації</h4>
+                        <p>Професійні анімації для створення WOW-ефекту</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-label">contacts</div>
+            <h2 class="section-title">ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
+            <p class="section-subtitle">Готові створити щось неймовірне разом? Пишіть — ми на зв'язку!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+380968324080" class="contact-link">+380 96 832 40 80</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.49 8.44 13.48C8.08 13.47 7.4 13.28 6.89 13.11C6.26 12.91 5.77 12.8 5.81 12.45C5.83 12.27 6.08 12.09 6.55 11.9C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/Nexussiko" target="_blank" class="contact-link">@Nexussiko</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:vibewebstudio8@gmail.com" class="contact-link">vibewebstudio8@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Локація</h3>
+                            <p class="contact-location">Вінниця, Україна 💙💛</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="tel:+380968324080" target="_blank" class="social-link" title="Подзвонити">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/Nexussiko" target="_blank" class="social-link" title="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM13.87 7.33C13.73 8.65 13.18 11.85 12.93 13.33C12.81 13.95 12.58 14.16 12.36 14.18C11.88 14.23 11.51 13.87 11.04 13.56C10.31 13.08 9.89 12.78 9.18 12.31C8.36 11.77 8.89 11.47 9.37 10.98C9.49 10.86 11.63 8.92 11.67 8.74C11.6724 8.71516 11.6717 8.68767 11.6644 8.66483C11.6571 8.64198 11.6437 8.62147 11.625 8.60833C11.575 8.56667 11.508 8.58333 11.45 8.59167C11.375 8.60833 10.208 9.37 7.93 10.9C7.6 11.125 7.3 11.2417 7.03 11.2333C6.73333 11.225 6.16667 11.0667 5.74167 10.925C5.21667 10.7583 4.80833 10.6667 4.84167 10.375C4.85833 10.225 5.06667 10.075 5.45833 9.91667C7.89167 8.85833 9.50833 8.15833 10.3167 7.825C12.6333 6.85833 13.1083 6.69167 13.425 6.69167C13.4917 6.69167 13.65 6.70833 13.75 6.79167C13.8333 6.85833 13.8583 6.95 13.8667 7.01667C13.8583 7.06667 13.875 7.21667 13.87 7.33Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:vibewebstudio8@gmail.com" class="social-link" title="Email">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 3.333H3.333C2.417 3.333 1.675 4.083 1.675 5L1.667 15C1.667 15.917 2.417 16.667 3.333 16.667H16.667C17.583 16.667 18.333 15.917 18.333 15V5C18.333 4.083 17.583 3.333 16.667 3.333ZM16.667 6.667L10 10.833L3.333 6.667V5L10 9.167L16.667 5V6.667Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <h3 class="form-title">Напишіть нам!</h3>
+                    <p class="form-subtitle">Заповніть форму і ми зв'яжемось з вами протягом години</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше ім'я*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="+380 XX XXX XX XX*" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш Email*" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Розкажіть про ваш проєкт..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>Відправити заявку</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo-link">
+                        <svg class="footer-logo" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 8L25 42L42 8" stroke="url(#footer-gradient-svg)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="footer-gradient-svg" x1="8" y1="8" x2="42" y2="42">
+                                    <stop offset="0%" stop-color="#00D4FF"/>
+                                    <stop offset="100%" stop-color="#7B2FF7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <h3 class="footer-title">VibeWeb Studio</h3>
+                    <p class="footer-tagline">Створюємо digital-майбутнє разом з вами</p>
+                    <div class="footer-social">
+                        <a href="tel:+380968324080" class="footer-social-link" title="Подзвонити">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/Nexussiko" target="_blank" class="footer-social-link" title="Telegram">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M11 2C6.03 2 2 6.03 2 11C2 15.97 6.03 20 11 20C15.97 20 20 15.97 20 11C20 6.03 15.97 2 11 2ZM15.257 8.13C15.107 9.65 14.507 13.085 14.237 14.695C14.107 15.365 13.857 15.595 13.617 15.617C13.087 15.667 12.677 15.257 12.157 14.917C11.347 14.387 10.877 14.057 10.097 13.537C9.197 12.947 9.767 12.617 10.287 12.087C10.417 11.957 12.797 9.817 12.837 9.619C12.8403 9.59062 12.8395 9.56109 12.8315 9.53516C12.8235 9.50924 12.8088 9.48851 12.79 9.47583C12.735 9.43083 12.66 9.44917 12.595 9.45917C12.515 9.47583 11.215 10.337 8.73 12.09C8.36 12.345 8.03 12.4758 7.733 12.4667C7.40667 12.4575 6.78333 12.2867 6.31167 12.1375C5.73833 11.9517 5.28917 11.8533 5.32583 11.5375C5.34417 11.3717 5.57333 11.2058 5.99917 11.0308C8.68583 9.86583 10.4592 9.09583 11.3183 8.72583C13.8967 7.65583 14.4158 7.47583 14.7625 7.47583C14.8358 7.47583 15.005 7.49417 15.1175 7.58917C15.2108 7.66917 15.2383 7.77583 15.2475 7.85083C15.2383 7.90583 15.2567 8.06917 15.257 8.13Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:vibewebstudio8@gmail.com" class="footer-social-link" title="Email">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M18 4H4C2.9 4 2.01 4.9 2.01 6L2 16C2 17.1 2.9 18 4 18H18C19.1 18 20 17.1 20 16V6C20 4.9 19.1 4 18 4ZM18 8L11 12.5L4 8V6L11 10.5L18 6V8Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навігація</h4>
+                        <ul>
+                            <li><a href="#projects">Проекти</a></li>
+                            <li><a href="#services">Послуги</a></li>
+                            <li><a href="#advantages">Переваги</a></li>
+                            <li><a href="#about">Про нас</a></li>
+                            <li><a href="#contact">Контакти</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Послуги</h4>
+                        <ul>
+                            <li><a href="#services">Меню по QR-коду</a></li>
+                            <li><a href="#services">Landing Page</a></li>
+                            <li><a href="#services">Бізнес-сайт</a></li>
+                            <li><a href="#services">Інтернет-магазин</a></li>
+                            <li><a href="#services">NFC картки</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Контакти</h4>
+                        <ul>
+                            <li><a href="tel:+380968324080">+380 96 832 40 80</a></li>
+                            <li><a href="mailto:vibewebstudio8@gmail.com">vibewebstudio8@gmail.com</a></li>
+                            <li><a href="https://t.me/Nexussiko" target="_blank">Telegram</a></li>
+                            <li><span>Вінниця, Україна 💙💛</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 VibeWeb Studio. Всі права захищені.</p>
+                <div class="footer-badges">
+                    <span class="badge">Made with ❤️ in Ukraine</span>
+                    <span class="badge">DDoS Protected</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
