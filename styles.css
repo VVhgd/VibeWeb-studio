@@ -28,6 +28,13 @@
     --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
     --transition: all 0.4s var(--ease-out);
     --transition-slow: all 0.7s var(--ease-out);
+
+    /* Spacing scale (was missing --space-lg, which silently broke .container padding) */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: clamp(20px, 4vw, 40px);
+    --space-xl: clamp(40px, 8vw, 96px);
 }
 
 /* Light Theme */
@@ -135,6 +142,14 @@ body {
 
 @keyframes loading {
     to { width: 100%; }
+}
+
+.preloader-percent {
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray);
 }
 
 /* Navigation */
@@ -2006,3 +2021,117 @@ section {
     }
 }
 
+
+/* =============================================
+   V2 UPGRADE — bug fixes + premium polish
+   ============================================= */
+
+/* ---- Accessible focus states (keyboard users) ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* ---- Scroll progress bar ---- */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 10001;
+    background: transparent;
+    pointer-events: none;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--secondary), var(--primary), var(--accent));
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+    transition: width 0.1s linear;
+}
+
+/* ---- Back to top button ---- */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(16px) scale(0.9);
+    transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+    box-shadow: 0 8px 24px rgba(123, 47, 247, 0.35);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.back-to-top:hover {
+    box-shadow: 0 12px 32px rgba(123, 47, 247, 0.55);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.back-to-top svg {
+    transition: transform 0.3s var(--ease-out);
+}
+
+.back-to-top:hover svg {
+    transform: translateY(-2px);
+}
+
+/* ---- Subtle film-grain overlay for a premium, less "flat" feel ---- */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.025;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---- Respect reduced-motion preference ---- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ---- Back-to-top hidden on very small screens where thumb reach differs ---- */
+@media (max-width: 480px) {
+    .back-to-top {
+        right: 16px;
+        bottom: 16px;
+        width: 44px;
+        height: 44px;
+    }
+}

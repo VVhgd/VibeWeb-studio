@@ -152,7 +152,10 @@ const server = http.createServer((req, res) => {
     // Додавання security headers
     setSecurityHeaders(res);
     
-    let filePath = '.' + req.url;
+    // Strip query string / hash so "style.css?v=2" resolves correctly
+    const urlPath = req.url.split('?')[0].split('#')[0];
+
+    let filePath = '.' + urlPath;
     if (filePath === './') {
         filePath = './index.html';
     }
@@ -220,9 +223,16 @@ const server = http.createServer((req, res) => {
                 res.end('Помилка сервера: ' + error.code, 'utf-8');
             }
         } else {
-            res.writeHead(200, { 
+            // HTML must always be revalidated so site updates aren't hidden
+            // from returning visitors for a year; static assets can be cached hard.
+            const isHTML = extname === '.html';
+            const cacheControl = isHTML
+                ? 'no-cache, must-revalidate'
+                : 'public, max-age=31536000, immutable';
+
+            res.writeHead(200, {
                 'Content-Type': contentType,
-                'Cache-Control': 'public, max-age=31536000'
+                'Cache-Control': cacheControl
             });
             res.end(content, 'utf-8');
         }

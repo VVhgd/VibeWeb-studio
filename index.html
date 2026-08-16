@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="VibeWeb Studio - Студія веб-розробки. Створюємо сучасні та стильні веб-сайти">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vibewebstudio.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VibeWeb Studio — Студія Розробки Вебсайтів">
+    <meta property="og:description" content="Створюємо сучасні та стильні веб-сайти для вашого бізнесу у Вінниці та по всій Україні.">
+    <meta property="og:locale" content="uk_UA">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VibeWeb Studio — Студія Розробки Вебсайтів">
+    <meta name="twitter:description" content="Створюємо сучасні та стильні веб-сайти для вашого бізнесу.">
     <title>VibeWeb Studio — Студія Розробки Вебсайтів</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='5' y1='5' x2='35' y2='35'%3E%3Cstop offset='0%25' stop-color='%2300D4FF'/%3E%3Cstop offset='100%25' stop-color='%237B2FF7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='9' fill='%230a0a0a'/%3E%3Cpath d='M8 9L20 32L32 9' stroke='url(%23g)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-content">
@@ -27,9 +41,17 @@
             <div class="preloader-progress">
                 <div class="preloader-progress-bar"></div>
             </div>
+            <div class="preloader-percent">0%</div>
         </div>
     </div>
-    
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Прогорнути наверх">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 15V5M10 5L4 11M10 5L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -53,7 +75,7 @@
                 <li><a href="#contact" class="nav-link">Контакти</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" title="Змінити тему">
+                <button class="theme-toggle" id="themeToggle" title="Змінити тему" aria-label="Змінити тему оформлення">
                     <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
                         <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14.1 5.9M5.9 14.1L4.5 15.5M15.5 15.5L14.1 14.1M5.9 5.9L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -70,7 +92,7 @@
                 </a>
                 <a href="https://t.me/Nexussiko" target="_blank" class="btn-nav">Обговорити проєкт</a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" role="button" tabindex="0" aria-label="Відкрити меню">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -485,7 +507,7 @@
     <div class="modal" id="modal-qr-menu">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
             <h2 class="modal-title">Меню по QR-коду</h2>
             <div class="modal-price">Від 2 000 грн</div>
             
@@ -527,7 +549,7 @@
     <div class="modal" id="modal-landing">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
             <h2 class="modal-title">Landing Page</h2>
             <div class="modal-price">Від 4 990 грн</div>
             
@@ -571,7 +593,7 @@
     <div class="modal" id="modal-business">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
             <h2 class="modal-title">Бізнес-сайт</h2>
             <div class="modal-price">Від 9 990 грн</div>
             
@@ -620,7 +642,7 @@
     <div class="modal" id="modal-ecommerce">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
             <h2 class="modal-title">Інтернет-магазин</h2>
             <div class="modal-price">Від 15 999 грн</div>
             
@@ -673,7 +695,7 @@
     <div class="modal" id="modal-nfc">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
             <h2 class="modal-title">NFC картки</h2>
             <div class="modal-price">Від 450 грн</div>
             
