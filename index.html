@@ -3,28 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VibeWeb Studio - Студія веб-розробки. Створюємо сучасні та стильні веб-сайти">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>VibeWeb Studio — Студія Розробки Вебсайтів | Вінниця</title>
+    <meta name="title" content="VibeWeb Studio — Студія Розробки Вебсайтів | Вінниця">
+    <meta name="description" content="Розробка сайтів у Вінниці. Landing Page, бізнес-сайти, інтернет-магазини, QR-меню, NFC картки. Сучасний дизайн та SEO-оптимізація під ключ">
+    <meta name="keywords" content="розробка сайтів Вінниця, веб студія Вінниця, створення сайтів, landing page, інтернет магазин, QR меню, NFC картки, веб дизайн">
+    <meta name="author" content="VibeWeb Studio">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://vibewebstudio.com/">
+    <meta name="language" content="Ukrainian">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibewebstudio.com/">
     <meta property="og:title" content="VibeWeb Studio — Студія Розробки Вебсайтів">
-    <meta property="og:description" content="Створюємо сучасні та стильні веб-сайти для вашого бізнесу у Вінниці та по всій Україні.">
+    <meta property="og:description" content="Професійна розробка сайтів у Вінниці. Landing Page, бізнес-сайти, інтернет-магазини від 2000 грн">
+    <meta property="og:image" content="https://vibewebstudio.com/og-image.jpg">
     <meta property="og:locale" content="uk_UA">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="VibeWeb Studio — Студія Розробки Вебсайтів">
-    <meta name="twitter:description" content="Створюємо сучасні та стильні веб-сайти для вашого бізнесу.">
-    <title>VibeWeb Studio — Студія Розробки Вебсайтів</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='5' y1='5' x2='35' y2='35'%3E%3Cstop offset='0%25' stop-color='%2300D4FF'/%3E%3Cstop offset='100%25' stop-color='%237B2FF7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='9' fill='%230a0a0a'/%3E%3Cpath d='M8 9L20 32L32 9' stroke='url(%23g)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vibewebstudio.com/">
+    <meta property="twitter:title" content="VibeWeb Studio — Студія Розробки Вебсайтів">
+    <meta property="twitter:description" content="Професійна розробка сайтів у Вінниці. Landing Page, бізнес-сайти, інтернет-магазини від 2000 грн">
+    <meta property="twitter:image" content="https://vibewebstudio.com/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://vibewebstudio.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M5 5L20 35L35 5' stroke='%237B2FF7' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%230a0a0a'/%3E%3Cpath d='M40 40L90 140L140 40' stroke='%237B2FF7' stroke-width='8' fill='none'/%3E%3C/svg%3E">
+    
+    <!-- Preconnect & Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#7B2FF7">
+    <meta name="msapplication-TileColor" content="#7B2FF7">
 </head>
 <body>
-    <!-- Scroll progress -->
-    <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
-
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-content">
@@ -41,17 +72,9 @@
             <div class="preloader-progress">
                 <div class="preloader-progress-bar"></div>
             </div>
-            <div class="preloader-percent">0%</div>
         </div>
     </div>
-
-    <!-- Back to top -->
-    <button class="back-to-top" aria-label="Прогорнути наверх">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 15V5M10 5L4 11M10 5L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </button>
-
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -75,7 +98,7 @@
                 <li><a href="#contact" class="nav-link">Контакти</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" title="Змінити тему" aria-label="Змінити тему оформлення">
+                <button class="theme-toggle" id="themeToggle" title="Змінити тему">
                     <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
                         <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14.1 5.9M5.9 14.1L4.5 15.5M15.5 15.5L14.1 14.1M5.9 5.9L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -92,7 +115,7 @@
                 </a>
                 <a href="https://t.me/Nexussiko" target="_blank" class="btn-nav">Обговорити проєкт</a>
             </div>
-            <div class="hamburger" role="button" tabindex="0" aria-label="Відкрити меню">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -110,9 +133,9 @@
                     <span class="hero-label">modern</span>
                     <span class="hero-label">effective</span>
                 </div>
-                <h1 class="hero-title">СТВОРЮЄМО<br><span class="gradient-text">DIGITAL МАЙБУТНЄ</span></h1>
-                <p class="hero-subtitle">Ваш бізнес заслуговує на найкраще</p>
-                <div class="hero-slogan">Від ідеї до реалізації — з нами це просто</div>
+                <h1 class="hero-title">РОЗРОБКА САЙТІВ<br><span class="gradient-text">У ВІННИЦІ</span></h1>
+                <p class="hero-subtitle">Сайти, які продають</p>
+                <div class="hero-slogan">Landing, бізнес-сайти, магазини — під ключ</div>
                 <a href="#projects" class="scroll-indicator">
                     <span>scroll</span>
                     <svg width="20" height="40" viewBox="0 0 20 40" fill="none">
@@ -262,9 +285,9 @@
             <div class="services-grid">
 
                 <!-- QR Menu -->
-                <div class="service-card" data-service="qr-menu">
+                <article class="service-card" data-service="qr-menu" role="article" aria-label="Послуга: Меню по QR-коду">
                     <div class="service-card-front">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
                                 <rect x="15" y="15" width="30" height="30" rx="4" stroke="url(#sg1)" stroke-width="2"/>
                                 <path d="M25 25H35M25 30H32" stroke="url(#sg1)" stroke-width="2" stroke-linecap="round"/>
@@ -273,45 +296,31 @@
                             </svg>
                         </div>
                         <h3 class="service-title">Меню по QR-коду</h3>
-                        <p class="service-description">Цифрове меню для ресторанів та кафе з можливістю швидкого оновлення</p>
-                        <div class="service-price">Від 2 000 грн</div>
+                        <p class="service-description">Цифрове меню для закладів харчування</p>
+                        <div class="service-price" aria-label="Ціна від 2000 гривень">Від 2 000 грн</div>
                     </div>
-                    <div class="service-card-back">
+                    <div class="service-card-back" role="complementary">
                         <div class="service-back-header">
                             <span class="service-back-title">Меню по QR-коду</span>
-                            <span class="service-back-price">Від 2 000 грн</span>
+                            <span class="service-back-price" aria-label="2000 гривень">2 000 грн</span>
                         </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">🎯 Чим допоможе</div>
-                            <ul class="service-back-list">
-                                <li>Економія на друку меню — назавжди</li>
-                                <li>Миттєве оновлення цін без витрат</li>
-                                <li>Збільшення середнього чека +30%</li>
-                                <li>Збір відгуків прямо через меню</li>
-                                <li>Аналітика популярних страв</li>
-                            </ul>
-                        </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">📦 Що входить</div>
-                            <ul class="service-back-list">
-                                <li>Дизайн + верстка меню</li>
-                                <li>QR-коди для столиків</li>
-                                <li>Адмін-панель для редагування</li>
-                                <li>Хостинг & SSL на 1 рік</li>
-                            </ul>
-                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Не потрібно друкувати меню</li>
+                            <li>Змінюйте ціни за хвилину</li>
+                            <li>Унікальні QR-коди для столиків</li>
+                            <li>Панель керування меню</li>
+                            <li>Хостинг включено на рік</li>
+                        </ul>
                         <div class="service-back-cta">
-                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
-                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                            <button class="service-cta-primary" data-service="qr-menu" aria-label="Детальніше про меню по QR-коду">Детальніше</button>
                         </div>
                     </div>
-                    <button class="service-details-btn">Детальніше</button>
-                </div>
+                </article>
 
                 <!-- Landing Page -->
-                <div class="service-card" data-service="landing">
+                <article class="service-card" data-service="landing" role="article" aria-label="Послуга: Landing Page">
                     <div class="service-card-front">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
                                 <rect x="10" y="10" width="40" height="40" rx="4" stroke="url(#sg2)" stroke-width="2"/>
                                 <path d="M20 25H40M20 30H35M20 35H30" stroke="url(#sg2)" stroke-width="2" stroke-linecap="round"/>
@@ -319,46 +328,31 @@
                             </svg>
                         </div>
                         <h3 class="service-title">Landing Page</h3>
-                        <p class="service-description">Конверсійний лендінг для продажу вашого продукту або послуги 24/7</p>
-                        <div class="service-price">Від 4 990 грн</div>
+                        <p class="service-description">Одна сторінка, що продає</p>
+                        <div class="service-price" aria-label="Ціна від 4990 гривень">Від 4 990 грн</div>
                     </div>
-                    <div class="service-card-back">
+                    <div class="service-card-back" role="complementary">
                         <div class="service-back-header">
                             <span class="service-back-title">Landing Page</span>
-                            <span class="service-back-price">Від 4 990 грн</span>
+                            <span class="service-back-price" aria-label="4990 гривень">4 990 грн</span>
                         </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">🎯 Чим допоможе</div>
-                            <ul class="service-back-list">
-                                <li>Конверсія заявок до +40%</li>
-                                <li>Продажі та заявки 24/7 без менеджерів</li>
-                                <li>Швидкий запуск реклами в Google/Meta</li>
-                                <li>SEO — клієнти самі вас знаходять</li>
-                                <li>Аналітика кожного відвідувача</li>
-                            </ul>
-                        </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">📦 Що входить</div>
-                            <ul class="service-back-list">
-                                <li>Унікальний дизайн у Figma</li>
-                                <li>Адаптив Mobile/Tablet/Desktop</li>
-                                <li>Анімації та WOW-ефекти</li>
-                                <li>Google Analytics + Facebook Pixel</li>
-                                <li>SSL + хостинг 1 рік</li>
-                            </ul>
-                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Макет у Figma перед версткою</li>
+                            <li>Працює на телефонах і планшетах</li>
+                            <li>Плавні анімації при прокрутці</li>
+                            <li>Лічильник відвідувачів</li>
+                            <li>Налаштування пошуку та хостинг</li>
+                        </ul>
                         <div class="service-back-cta">
-                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
-                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                            <button class="service-cta-primary" data-service="landing" aria-label="Детальніше про Landing Page">Детальніше</button>
                         </div>
                     </div>
-                    <button class="service-details-btn">Детальніше</button>
-                </div>
+                </article>
 
                 <!-- Бізнес-сайт -->
-                <div class="service-card" data-service="business">
+                <article class="service-card" data-service="business" role="article" aria-label="Послуга: Бізнес-сайт">
                     <div class="service-card-front">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
                                 <rect x="15" y="15" width="30" height="30" rx="3" stroke="url(#sg3)" stroke-width="2"/>
                                 <path d="M23 23H37M23 28H37M23 33H33" stroke="url(#sg3)" stroke-width="2" stroke-linecap="round"/>
@@ -366,47 +360,31 @@
                             </svg>
                         </div>
                         <h3 class="service-title">Бізнес-сайт</h3>
-                        <p class="service-description">Повноцінний корпоративний сайт для серйозного бізнесу з максимою функціоналом</p>
-                        <div class="service-price">Від 9 990 грн</div>
+                        <p class="service-description">Повноцінний сайт компанії</p>
+                        <div class="service-price" aria-label="Ціна від 9990 гривень">Від 9 990 грн</div>
                     </div>
-                    <div class="service-card-back">
+                    <div class="service-card-back" role="complementary">
                         <div class="service-back-header">
                             <span class="service-back-title">Бізнес-сайт</span>
-                            <span class="service-back-price">Від 9 990 грн</span>
+                            <span class="service-back-price" aria-label="9990 гривень">9 990 грн</span>
                         </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">🎯 Чим допоможе</div>
-                            <ul class="service-back-list">
-                                <li>Репутація та довіра клієнтів</li>
-                                <li>Залучення з Google — безкоштовний трафік</li>
-                                <li>Захист від хакерів (SSL + DDoS)</li>
-                                <li>Швидкість сайту до 100/100 в Google</li>
-                                <li>Зростання продажів на 150%+</li>
-                            </ul>
-                        </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">📦 Що входить</div>
-                            <ul class="service-back-list">
-                                <li>До 10 сторінок унікального дизайну</li>
-                                <li>Блог, портфоліо, галерея</li>
-                                <li>Адмін-панель, CMS</li>
-                                <li>SEO усіх сторінок + Google Maps</li>
-                                <li>SSL + DDoS захист</li>
-                                <li>Підтримка 3 місяці</li>
-                            </ul>
-                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Десять сторінок контенту</li>
+                            <li>Розділи для статей і робіт</li>
+                            <li>Редагуйте тексти самостійно</li>
+                            <li>Налаштування для пошуковиків</li>
+                            <li>Інструкція з використання</li>
+                        </ul>
                         <div class="service-back-cta">
-                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
-                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                            <button class="service-cta-primary" data-service="business" aria-label="Детальніше про бізнес-сайт">Детальніше</button>
                         </div>
                     </div>
-                    <button class="service-details-btn">Детальніше</button>
-                </div>
+                </article>
 
                 <!-- Інтернет-магазин -->
-                <div class="service-card" data-service="ecommerce">
+                <article class="service-card" data-service="ecommerce" role="article" aria-label="Послуга: Інтернет-магазин">
                     <div class="service-card-front">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
                                 <path d="M20 35L30 25L40 35M30 40V25" stroke="url(#sg4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <rect x="12" y="12" width="36" height="36" rx="4" stroke="url(#sg4)" stroke-width="2"/>
@@ -414,47 +392,31 @@
                             </svg>
                         </div>
                         <h3 class="service-title">Інтернет-магазин</h3>
-                        <p class="service-description">Повнофункціональний магазин з оплатою та автоматичними замовленнями</p>
-                        <div class="service-price">Від 15 999 грн</div>
+                        <p class="service-description">Продавайте товари онлайн</p>
+                        <div class="service-price" aria-label="Ціна від 15999 гривень">Від 15 999 грн</div>
                     </div>
-                    <div class="service-card-back">
+                    <div class="service-card-back" role="complementary">
                         <div class="service-back-header">
                             <span class="service-back-title">Інтернет-магазин</span>
-                            <span class="service-back-price">Від 15 999 грн</span>
+                            <span class="service-back-price" aria-label="15999 гривень">15 999 грн</span>
                         </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">🎯 Чим допоможе</div>
-                            <ul class="service-back-list">
-                                <li>Продажі автоматично 24/7</li>
-                                <li>Збільшення обороту до 200%</li>
-                                <li>Клієнти по всій Україні і не тільки</li>
-                                <li>Аналітика продажів у реальному часі</li>
-                                <li>Програми лояльності — повторні покупки</li>
-                            </ul>
-                        </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">📦 Що входить</div>
-                            <ul class="service-back-list">
-                                <li>Каталог + кошик + оплата</li>
-                                <li>LiqPay / WayForPay / Portmone</li>
-                                <li>Нова Пошта + доставка</li>
-                                <li>Відгуки, фільтри, пошук</li>
-                                <li>Адмін-панель + імпорт Excel</li>
-                                <li>Підтримка 6 місяців</li>
-                            </ul>
-                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Товари, кошик, оформлення</li>
+                            <li>Оплата карткою онлайн</li>
+                            <li>Розрахунок доставки Новою Поштою</li>
+                            <li>Керування товарами і замовленнями</li>
+                            <li>Документація проєкту</li>
+                        </ul>
                         <div class="service-back-cta">
-                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
-                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                            <button class="service-cta-primary" data-service="ecommerce" aria-label="Детальніше про інтернет-магазин">Детальніше</button>
                         </div>
                     </div>
-                    <button class="service-details-btn">Детальніше</button>
-                </div>
+                </article>
 
                 <!-- NFC -->
-                <div class="service-card" data-service="nfc">
+                <article class="service-card" data-service="nfc" role="article" aria-label="Послуга: NFC картки">
                     <div class="service-card-front">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
                                 <rect x="18" y="10" width="24" height="40" rx="3" stroke="url(#sg5)" stroke-width="2"/>
                                 <circle cx="30" cy="30" r="8" stroke="url(#sg5)" stroke-width="2"/>
@@ -463,41 +425,60 @@
                             </svg>
                         </div>
                         <h3 class="service-title">NFC картки</h3>
-                        <p class="service-description">Смарт-візитка з NFC для збору відгуків одним дотиком — WOW-ефект гарантовано</p>
-                        <div class="service-price">Від 450 грн</div>
+                        <p class="service-description">Електронна візитка з Google Reviews</p>
+                        <div class="service-price" aria-label="Ціна від 450 гривень">Від 450 грн</div>
                     </div>
-                    <div class="service-card-back">
+                    <div class="service-card-back" role="complementary">
                         <div class="service-back-header">
                             <span class="service-back-title">NFC картки</span>
-                            <span class="service-back-price">Від 450 грн</span>
+                            <span class="service-back-price" aria-label="450 гривень">450 грн</span>
                         </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">🎯 Чим допоможе</div>
-                            <ul class="service-back-list">
-                                <li>WOW-ефект при знайомстві — запам'ятають</li>
-                                <li>Збір відгуків Google одним дотиком</li>
-                                <li>Рейтинг компанії росте автоматично</li>
-                                <li>Ніколи не гублять як паперові візитки</li>
-                                <li>Статистика переглядів і переходів</li>
-                            </ul>
-                        </div>
-                        <div class="service-back-section">
-                            <div class="service-back-section-title">📦 Що входить</div>
-                            <ul class="service-back-list">
-                                <li>NFC-картка преміум-якості</li>
-                                <li>Дизайн (2 варіанти на вибір)</li>
-                                <li>Особиста сторінка-профіль</li>
-                                <li>QR-код + посилання на відгуки</li>
-                                <li>Можливість редагувати дані</li>
-                            </ul>
-                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Пластикова картка з NFC-чіпом</li>
+                            <li>Два варіанти дизайну на вибір</li>
+                            <li>Профіль з контактами й соцмережами</li>
+                            <li>QR-код для старих телефонів</li>
+                            <li>Статистика: хто і коли відкривав</li>
+                        </ul>
                         <div class="service-back-cta">
-                            <a href="https://t.me/Nexussiko" target="_blank" class="service-cta-primary">Замовити</a>
-                            <a href="tel:+380968324080" class="service-cta-secondary">Зателефонувати</a>
+                            <button class="service-cta-primary" data-service="nfc" aria-label="Детальніше про NFC картки">Детальніше</button>
                         </div>
                     </div>
-                    <button class="service-details-btn">Детальніше</button>
-                </div>
+                </article>
+
+                <!-- DDoS-захист -->
+                <article class="service-card" data-service="ddos" role="article" aria-label="Послуга: DDoS-захист">
+                    <div class="service-card-front">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="18" stroke="url(#sg6)" stroke-width="2"/>
+                                <path d="M30 20V30M30 30L35 35M30 30L25 35" stroke="url(#sg6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 15C22 15 18 20 18 25C18 30 22 35 22 35" stroke="url(#sg6)" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M38 15C38 15 42 20 42 25C42 30 38 35 38 35" stroke="url(#sg6)" stroke-width="2" stroke-linecap="round"/>
+                                <defs><linearGradient id="sg6" x1="12" y1="12" x2="48" y2="48"><stop offset="0%" stop-color="#00D4FF"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">DDoS-захист</h3>
+                        <p class="service-description">Сайт працює під час атак</p>
+                        <div class="service-price" aria-label="Ціна від 2500 гривень">Від 2 500 грн</div>
+                    </div>
+                    <div class="service-card-back" role="complementary">
+                        <div class="service-back-header">
+                            <span class="service-back-title">DDoS-захист</span>
+                            <span class="service-back-price" aria-label="2500 гривень">2 500 грн</span>
+                        </div>
+                        <ul class="service-back-list" aria-label="Що входить у послугу">
+                            <li>Обмеження запитів з одного IP</li>
+                            <li>CDN для розподілу навантаження</li>
+                            <li>Блокування підозрілого трафіку</li>
+                            <li>Нагляд за сервером цілодобово</li>
+                            <li>Допомога у налаштуванні</li>
+                        </ul>
+                        <div class="service-back-cta">
+                            <button class="service-cta-primary" data-service="ddos" aria-label="Детальніше про DDoS-захист">Детальніше</button>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </div>
@@ -507,7 +488,7 @@
     <div class="modal" id="modal-qr-menu">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
+            <button class="modal-close">&times;</button>
             <h2 class="modal-title">Меню по QR-коду</h2>
             <div class="modal-price">Від 2 000 грн</div>
             
@@ -533,7 +514,7 @@
                     <li>✓ Інтеграція фото страв</li>
                     <li>✓ Категорії та фільтри</li>
                     <li>✓ Хостинг на 1 рік</li>
-                    <li>✓ Технічна підтримка 1 місяць</li>
+                    <li>✓ Інструкція користувача</li>
                 </ul>
             </div>
             
@@ -549,7 +530,7 @@
     <div class="modal" id="modal-landing">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
+            <button class="modal-close">&times;</button>
             <h2 class="modal-title">Landing Page</h2>
             <div class="modal-price">Від 4 990 грн</div>
             
@@ -576,8 +557,7 @@
                     <li>✓ SEO оптимізація</li>
                     <li>✓ Google Analytics та Pixel Facebook</li>
                     <li>✓ Хостинг та домен на 1 рік</li>
-                    <li>✓ SSL сертифікат (HTTPS)</li>
-                    <li>✓ Технічна підтримка 2 місяці</li>
+                    <li>✓ Навчання роботі з адмін-панеллю</li>
                 </ul>
             </div>
             
@@ -593,7 +573,7 @@
     <div class="modal" id="modal-business">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
+            <button class="modal-close">&times;</button>
             <h2 class="modal-title">Бізнес-сайт</h2>
             <div class="modal-price">Від 9 990 грн</div>
             
@@ -622,10 +602,10 @@
                     <li>✓ Інтеграція з соцмережами</li>
                     <li>✓ Google Maps</li>
                     <li>✓ SEO оптимізація всіх сторінок</li>
-                    <li>✓ SSL сертифікат + DDoS захист</li>
+                    <li>✓ Базові налаштування безпеки</li>
                     <li>✓ Google Analytics</li>
                     <li>✓ Хостинг та домен на 1 рік</li>
-                    <li>✓ Технічна підтримка 3 місяці</li>
+                    <li>✓ Повна документація проєкту</li>
                     <li>✓ Навчання роботі з сайтом</li>
                 </ul>
             </div>
@@ -642,7 +622,7 @@
     <div class="modal" id="modal-ecommerce">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
+            <button class="modal-close">&times;</button>
             <h2 class="modal-title">Інтернет-магазин</h2>
             <div class="modal-price">Від 15 999 грн</div>
             
@@ -675,11 +655,10 @@
                     <li>✓ Адмін-панель для управління</li>
                     <li>✓ Імпорт товарів з Excel</li>
                     <li>✓ SEO оптимізація</li>
-                    <li>✓ SSL + DDoS захист</li>
                     <li>✓ Google Analytics + E-commerce</li>
                     <li>✓ Хостинг та домен на 1 рік</li>
-                    <li>✓ Технічна підтримка 6 місяців</li>
-                    <li>✓ Повне навчання роботі</li>
+                    <li>✓ Повна документація та навчання</li>
+                    <li>✓ Інструкція з керування магазином</li>
                 </ul>
             </div>
             
@@ -695,7 +674,7 @@
     <div class="modal" id="modal-nfc">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" aria-label="Закрити вікно">&times;</button>
+            <button class="modal-close">&times;</button>
             <h2 class="modal-title">NFC картки</h2>
             <div class="modal-price">Від 450 грн</div>
             
@@ -767,8 +746,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">Швидкість як у Flash</h3>
-                    <p class="advantage-text">Ваш сайт буде летіти швидше за суперкара! Оптимізація на максі — клієнти не встигнуть закрити очі, як сайт вже загрузився.</p>
+                    <h3 class="advantage-title">Максимальна швидкість</h3>
+                    <p class="advantage-text">Технічна оптимізація забезпечує завантаження до 1 секунди. Швидкі сайти отримують вищі позиції в Google і більше конверсій.</p>
                 </div>
                 
                 <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
@@ -784,8 +763,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">Дизайн, що палить</h3>
-                    <p class="advantage-text">Забудьте про нудні шаблони! Кожен наш проєкт — це унікальний арт, який запам'ятовується з першого погляду. Ваші конкуренти будуть плакати від заздрості.</p>
+                    <h3 class="advantage-title">Авторський дизайн</h3>
+                    <p class="advantage-text">Унікальна візуальна мова, яка відображає цінності вашого бренду та виділяє вас серед конкурентів.</p>
                 </div>
                 
                 <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
@@ -801,8 +780,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">Дедлайни? Легко!</h3>
-                    <p class="advantage-text">Ми не знаємо, що таке запізнення. Обіцяємо термін — виконуємо! Ваш проєкт буде готовий чітко в строк, а то й раніше.</p>
+                    <h3 class="advantage-title">Дотримання термінів</h3>
+                    <p class="advantage-text">Чіткі етапи розробки з прозорим контролем прогресу. Здаємо проєкти вчасно згідно з узгодженим планом.</p>
                 </div>
                 
                 <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
@@ -818,8 +797,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">100% Адаптив</h3>
-                    <p class="advantage-text">Ваш сайт буде ідеально виглядати на всіх пристроях — від телефона до 4K монітора. Pixel perfect — це про нас!</p>
+                    <h3 class="advantage-title">Повна адаптивність</h3>
+                    <p class="advantage-text">Коректне відображення на всіх пристроях — від смартфонів до великих моніторів. Тестуємо на реальних девайсах.</p>
                 </div>
                 
                 <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
@@ -835,8 +814,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">SEO на рівні богів</h3>
-                    <p class="advantage-text">Ваш сайт буде в топі Google швидше, ніж ви встигнете сказати "оптимізація". Трафік полетить рікою!</p>
+                    <h3 class="advantage-title">Професійне SEO</h3>
+                    <p class="advantage-text">Технічна оптимізація, семантична розмітка та якісний контент для органічного зростання у пошукових системах.</p>
                 </div>
                 
                 <div class="advantage-card" data-aos="fade-up" data-aos-delay="500">
@@ -851,8 +830,8 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="advantage-title">Підтримка 24/7</h3>
-                    <p class="advantage-text">Щось пішло не так? Ми завжди на зв'язку! Вночі чи вдень — допоможемо вирішити будь-яку проблему миттєво.</p>
+                    <h3 class="advantage-title">Готовий проєкт</h3>
+                    <p class="advantage-text">Здаємо повністю готовий сайт. Все налаштовано, протестовано та готове до запуску.</p>
                 </div>
             </div>
         </div>
@@ -863,8 +842,8 @@
         <div class="container">
             <div class="section-label">about</div>
             <div class="about-content">
-                <h2 class="about-title">Ми — VibeWeb Studio, студія дизайну та розробки вебсайтів.</h2>
-                <p class="about-text">Наша мета — створювати унікальні якісні веб-рішення, що дозволять Вашому бізнесу розвиватися та залучати більше клієнтів.</p>
+                <h2 class="about-title">Ми — молодіжна команда розробників з Вінниці</h2>
+                <p class="about-text">Створюємо сучасні сайти, які працюють. Без зайвих обіцянок — робимо, здаємо, все готово до запуску.</p>
             </div>
             
             <div class="tech-stack">
@@ -963,7 +942,7 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="tel:+380968324080" target="_blank" class="social-link" title="Подзвонити">
+                        <a href="tel:+380968324080" class="social-link" title="Подзвонити">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" stroke="currentColor" stroke-width="1.5"/>
                             </svg>
@@ -981,27 +960,69 @@
                     </div>
                 </div>
                 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm" novalidate>
                     <h3 class="form-title">Напишіть нам!</h3>
                     <p class="form-subtitle">Заповніть форму і ми зв'яжемось з вами протягом години</p>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Ваше ім'я*" required>
+                            <label for="name" class="visually-hidden">Ваше ім'я</label>
+                            <input 
+                                type="text" 
+                                id="name"
+                                name="name" 
+                                placeholder="Ваше ім'я*" 
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                autocomplete="name"
+                                aria-required="true"
+                                aria-describedby="name-error">
+                            <span id="name-error" class="error-message" role="alert"></span>
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="+380 XX XXX XX XX*" required>
+                            <label for="phone" class="visually-hidden">Телефон</label>
+                            <input 
+                                type="tel" 
+                                id="phone"
+                                name="phone" 
+                                placeholder="+380 XX XXX XX XX*" 
+                                required
+                                pattern="[\+]?[0-9]{10,13}"
+                                autocomplete="tel"
+                                aria-required="true"
+                                aria-describedby="phone-error">
+                            <span id="phone-error" class="error-message" role="alert"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Ваш Email*" required>
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input 
+                            type="email" 
+                            id="email"
+                            name="email" 
+                            placeholder="Ваш Email*" 
+                            required
+                            autocomplete="email"
+                            aria-required="true"
+                            aria-describedby="email-error">
+                        <span id="email-error" class="error-message" role="alert"></span>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Розкажіть про ваш проєкт..."></textarea>
+                        <label for="message" class="visually-hidden">Повідомлення</label>
+                        <textarea 
+                            id="message"
+                            name="message" 
+                            rows="5" 
+                            placeholder="Розкажіть про ваш проєкт..."
+                            maxlength="1000"
+                            autocomplete="off"
+                            aria-describedby="message-hint"></textarea>
+                        <span id="message-hint" class="form-hint">Необов'язкове поле</span>
                     </div>
-                    <button type="submit" class="btn-submit">
+                    <button type="submit" class="btn-submit" aria-label="Відправити заявку">
                         <span>Відправити заявку</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
@@ -1092,6 +1113,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- Service Details Slide-in Panel -->
+    <div class="service-panel" id="servicePanel">
+        <div class="service-panel-overlay"></div>
+        <div class="service-panel-content">
+            <button class="service-panel-close" aria-label="Закрити">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <div class="service-panel-header">
+                <div class="service-panel-icon" id="panelIcon"></div>
+                <h2 class="service-panel-title" id="panelTitle"></h2>
+                <div class="service-panel-price" id="panelPrice"></div>
+            </div>
+            
+            <div class="service-panel-body">
+                <div class="service-panel-section">
+                    <h3 class="service-panel-section-title">Бізнес-цілі</h3>
+                    <ul class="service-panel-list" id="panelGoals"></ul>
+                </div>
+                
+                <div class="service-panel-section">
+                    <h3 class="service-panel-section-title">Що входить в пакет</h3>
+                    <ul class="service-panel-list" id="panelIncludes"></ul>
+                </div>
+                
+                <div class="service-panel-section">
+                    <h3 class="service-panel-section-title">Технології</h3>
+                    <div class="service-panel-tech" id="panelTech"></div>
+                </div>
+                
+                <div class="service-panel-section">
+                    <h3 class="service-panel-section-title">Термін виконання</h3>
+                    <p class="service-panel-timeline" id="panelTimeline"></p>
+                </div>
+            </div>
+            
+            <div class="service-panel-footer">
+                <a href="https://t.me/Nexussiko" target="_blank" class="service-panel-cta primary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM13.87 7.33C13.73 8.65 13.18 11.85 12.93 13.33C12.81 13.95 12.58 14.16 12.36 14.18C11.88 14.23 11.51 13.87 11.04 13.56C10.31 13.08 9.89 12.78 9.18 12.31C8.36 11.77 8.89 11.47 9.37 10.98C9.49 10.86 11.63 8.92 11.67 8.74C11.6724 8.71516 11.6717 8.68767 11.6644 8.66483C11.6571 8.64198 11.6437 8.62147 11.625 8.60833C11.575 8.56667 11.508 8.58333 11.45 8.59167C11.375 8.60833 10.208 9.37 7.93 10.9C7.6 11.125 7.3 11.2417 7.03 11.2333C6.73333 11.225 6.16667 11.0667 5.74167 10.925C5.21667 10.7583 4.80833 10.6667 4.84167 10.375C4.85833 10.225 5.06667 10.075 5.45833 9.91667C7.89167 8.85833 9.50833 8.15833 10.3167 7.825C12.6333 6.85833 13.1083 6.69167 13.425 6.69167C13.4917 6.69167 13.65 6.70833 13.75 6.79167C13.8333 6.85833 13.8583 6.95 13.8667 7.01667C13.8583 7.06667 13.875 7.21667 13.87 7.33Z" fill="currentColor"/>
+                    </svg>
+                    <span>Замовити в Telegram</span>
+                </a>
+                <a href="tel:+380968324080" class="service-panel-cta secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Зателефонувати</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
